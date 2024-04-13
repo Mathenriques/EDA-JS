@@ -183,7 +183,7 @@ class BinaryTreeSearch {
 
     return Math.max(
       this.getNodeHeight(node.left), this.getNodeHeight(node.right)
-    )
+    ) + 1
   }
 }
 
