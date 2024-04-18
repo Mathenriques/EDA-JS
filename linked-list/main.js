@@ -140,3 +140,18 @@ linkedList.removeAt(1);
 let element = linkedList.getElementAt(0);
 console.log(element);
 console.log(linkedList.toString())
+
+// Lista Duplamente Ligada
+class DoublyNode extends Node {
+  constructor(element, next, prev) {
+    super(element, next);
+    this.prev = prev;
+  }
+}
+
+class DoublyLinkedList extends LinkedList {
+  constructor() {
+    super();
+    this.tail = undefined;
+  }
+}
